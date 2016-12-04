@@ -78,8 +78,8 @@ div#dz-upload-image .dz-message {
     margin-bottom: 30px;
 }
 
-.main-content .panel.panel-taxon table > tbody > tr > td,
-.main-content .panel.panel-taxon table > thead > tr > td {
+.main-content .panel.panel-taxon table.table-bordered > tbody > tr > td,
+.main-content .panel.panel-taxon table.table-bordered > thead > tr > td {
     padding-left: 15px;
     border: 1px solid #d4d4d4;
 }
@@ -102,4 +102,9 @@ div#dz-upload-image .dz-message {
 
 .main-content .panel.panel-taxon.first-section table {
     border: none;
+}
+
+.main-content .panel.panel-taxon .list-thumbnails > a.thumbnail-taxon > img {
+    max-width: 100px;
+    max-height: 80px;
 }
