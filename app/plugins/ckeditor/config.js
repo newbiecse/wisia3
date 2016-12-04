@@ -55,7 +55,7 @@ CKEDITOR.editorConfig = function( config ) {
 
     config.toolbar_WithoutImageUpload =
      [
-         { name: 'document', items: ['Source', '-', 'DocProps', '-', 'Templates'] },
+         { name: 'document', items: ['Source', '-', 'DocProps', 'Preview', '-', 'Templates'] },
          { name: 'clipboard', items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'] },
          { name: 'editing', items: ['Find', 'Replace', '-', 'SelectAll', '-', 'SpellChecker', 'Scayt'] },
          {
