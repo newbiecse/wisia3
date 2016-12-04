@@ -1,0 +1,62 @@
+/* container */
+.container-fluid { padding-top: 66px; }
+/* header */
+.wi-header { height: 56px;box-sizing: border-box;width: 100%;border-bottom: 1px solid #cccccc;padding: 7px 12px;
+	position: absolute;top: 0;left: 0;z-index: 10;
+	
+	.block-2 { padding-top: 6px; } 
+    .logo { height: 40px; }
+	.online { line-height: 1em;font-size: 1.6em; }
+	.mlt-lang { color: @main-color;
+		.mlt-btn { display: block;width: 56px;height: 28px;line-height: 28px;box-sizing: border-box;
+			.fa { line-height: 18px;font-size: 0.8em; }
+		}
+		.flag-icon { font-size: 16px;margin: 1px 10px 1px 0; }
+		.mlt-list { display: none;width: 56px;border: 1px solid #cccccc;
+			li { height: 28px;line-height: 18px;.rnd;box-sizing: border-box;
+				a { font-size: 0.8em;display: block;color: @main-color; }
+				&:hover { 
+					a { color: #454545;text-decoration: none; }
+				}
+			}
+		}
+		&:hover { 
+			.mlt-btn { background-color: @main-color;
+				.fa { color: white; }
+			}
+			.mlt-list { background: white;display: block; }
+		}
+	}
+	.search-block {
+		i { width: 14px;height: 14px;line-height: 28px;color: @main-color; }
+		.input-group { .flex-row; 
+			span.input-group-addon { width: 24px;background: none;padding: 6px 0 0 6px;box-sizing: border-box; }
+			input { width: 85%;height: 28px;float: right;border-left: 0;flex: 1; }			
+		}
+	}
+}
+/* menu */
+.menuwrap { box-sizing: border-box;margin: 0;padding: 0;position: relative;background-color: @main-color;height: 40px;overflow: visible;
+	.menu { height: 48px;max-width: 80%;
+		>li { display: block;float: left;height: auto;white-space: nowrap;padding: 5px 8px; 
+			i { margin-right: 5px;line-height: 18px; 
+				&.last { margin-right: 0;margin-left: 10px;color: rgba(255,255,255,0.5); }
+			}
+			a { padding: 5px 15px;color: white; }
+			&:hover,&.active {
+				i.last { color: rgba(0,0,0,1.8); }
+				a { background-color: white;color: #454545; }
+			}
+			&.open, &:focus {
+				a { background-color: white;color: #454545; }
+			}
+		}
+	}
+	.collect { position: absolute;right: 0;top: 0;overflow: visible;
+		.dropdown-menu { right: 0;left: auto; }
+	}
+}
+/* footer */
+footer { height: 30px;line-height: 30px;background-color: lightblue; 
+	p { padding: 0 125px; }
+}
