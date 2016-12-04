@@ -7,6 +7,29 @@
     border: 1px solid rgb(204, 204, 204);
 }
 
+body .main-content {
+    color: rgb(204, 204, 204);
+}
+
 .images-filter .form-group {
     margin-right: 10px;
+}
+
+.images-grid {
+    margin-bottom: 20px;
+}
+
+.images-grid div.item {
+    margin-right: 10px;
+    margin-top: 10px;
+    float: left;
+    width: 208px;
+    height: 260px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.images-grid div.item div.item-image {
+    border-bottom: 1px solid rgb(204, 204, 204);
 }
