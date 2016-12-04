@@ -33,3 +33,24 @@ body .main-content {
 .images-grid div.item div.item-image {
     border-bottom: 1px solid rgb(204, 204, 204);
 }
+
+.images-grid div.item.addnew div.item-image {
+    margin-top: 80px;
+    border: none;
+}
+
+div#dz-upload-image {
+    cursor: pointer;
+    width: 95%;
+    height: 100px;
+    border: 2px dashed #197de1;
+    border-radius: 15px;
+    margin: 5px 15px 5px 15px;
+}
+
+div#dz-upload-image .dz-message {
+    text-align: center;
+    padding-top: 40px;
+    /*min-width: 200px;
+    min-height: 200px;*/
+}

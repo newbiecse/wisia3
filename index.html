@@ -14,6 +14,7 @@
 		<link href="app/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 		<link href="app/plugins/select2/css/select2.min.css" rel="stylesheet" />
 		<link href="app/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" />
+		<link href="app/plugins/dropzone/dropzone.css" rel="stylesheet" />
 		<link href="app/css/flag-icon.css" rel="stylesheet" />
 		<link href="app/css/main.css" rel="stylesheet" />
         
@@ -141,6 +142,12 @@
 				</div><!-- images-filter -->
 
 				<div class="images-grid">
+
+					<div class="item addnew">
+						<div class="item-image">
+							<img src="app/images/add_image.png" class="img-responsive center-block" alt="Responsive image">
+						</div><!-- item-image -->
+					</div><!-- item -->
 
 					<div class="item editable">
 						<div class="item-image">
@@ -352,10 +359,121 @@
 			</div><!-- /.modal-dialog -->
 		</div><!-- /.modal -->
 
+		<div id="modal-addnew-image" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Add image</h4>
+					</div>
+
+					<div class="modal-body">
+						
+						<div class="row">
+							<div class="center-block">
+								<div id="dz-upload-image">
+									<div class="dz-message center-block">
+										Drop files here or click to upload.
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="fileName">File name</label>
+									<input name="fileName" type="text" class="form-control">
+								</div>
+							</div><!-- col -->
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="IRPHolder">IRP Holder</label>
+									<input name="IRPHolder" type="text" class="form-control">
+								</div>
+							</div><!-- col -->
+
+						</div><!-- row -->
+
+						<div class="row">
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="copyright">Copy right</label>
+									<input name="copyright" type="text" class="form-control">
+								</div>
+							</div><!-- col -->
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="IRPEmail">IRP Email</label>
+									<input name="IRPEmail" type="text" class="form-control">
+								</div>
+							</div><!-- col -->
+
+						</div><!-- row -->
+
+						<div class="row">
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="Taxon">Taxon</label>
+									<input name="Taxon" type="text" class="form-control">
+								</div>
+							</div><!-- col -->
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="piece">Find piece</label>
+									<input name="piece" type="text" class="form-control">
+								</div>
+							</div><!-- col -->
+
+						</div><!-- row -->
+
+						<div class="row">
+
+							<div class="col-md-12">
+
+								<div class="form-group">
+									<label for="imageText">Image Text</label>
+									<input name="imageText" type="text" class="form-control">
+								</div>
+
+								<div class="form-group">
+									<label for="imageTextEn">Image Text English</label>
+									<input name="imageTextEn" type="text" class="form-control">
+								</div>
+
+							</div>						
+
+						</div><!-- row -->																			
+
+					</div><!-- modal-body -->
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">
+							<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+							Delete
+						</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal">
+							<span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+							Close
+						</button>
+					</div>
+
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
 		<script src="app/plugins/jquery/jquery.min.js"></script>
 		<script src="app/plugins/bootstrap/js/bootstrap.min.js"></script>
 		<script src="app/plugins/select2/js/select2.min.js"></script>
-		<script src="app/plugins/select2/js/select2.conf.js"></script>		
+		<script src="app/plugins/select2/js/select2.conf.js"></script>
+		<script src="app/plugins/dropzone/dropzone.js"></script>
         <script src="app/js/components/menu.js"></script>		
         <script src="app/js/main.js"></script>
 		<script src="app/js/pages/image-management/image-management.js"></script>
