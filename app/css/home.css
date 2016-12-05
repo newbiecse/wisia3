@@ -1,0 +1,28 @@
+.main-content .articles-grid .item {
+    width: 100%;
+    float: left;
+    height: 300px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    padding: 1px;
+    margin: 15px 0px;
+}
+
+.main-content .articles-grid .item > .panel {
+    border: none;
+    box-shadow: none;
+}
+
+.main-content .articles-grid .item .msg-desc {
+    min-height: 50px;
+    margin-bottom: 10px;
+}
+
+.main-content .articles-grid .item .item-actions a.read-more {
+    text-decoration: underline;
+}
+
+.main-content .articles-grid .item .item-image {
+    width: 100%;
+    height: 100%;
+}
