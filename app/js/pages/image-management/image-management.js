@@ -29,10 +29,17 @@ ImageManagement = function () {
     }
 
     var initDropzone = function () {
+
+        Dropzone.autoDiscover = false;
+
         // var dropzone = new Dropzone("div#dz-upload-image", { url: "/file/post"});
-        $('div.dropzone').dropzone({
+        $('div#dz-upload-image').dropzone({
             url: 'url'
         });
+
+        // $('div#dz-upload-mul-image').dropzone({
+        //     url: 'url'
+        // });        
     }
 
     return {

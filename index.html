@@ -15,7 +15,6 @@
 		<link href="app/plugins/select2/css/select2.min.css" rel="stylesheet" />
 		<link href="app/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" />
 		<link href="app/plugins/dropzone/dropzone.css" rel="stylesheet" />
-		<link href="app/plugins/dropzone/dropzone.customize.css" rel="stylesheet" />
 		<link href="app/css/flag-icon.css" rel="stylesheet" />
 		<link href="app/css/main.css" rel="stylesheet" />
         
@@ -142,13 +141,17 @@
 
 				</div><!-- images-filter -->
 
-				<div class="images-grid">
+				<div class="page-actions row">
+					<button class="btn btn-primary" data-toggle="modal" data-target="#modal-addnew-image">
+						<i class="fa fa-file-image-o" aria-hidden="true"></i> Add Image
+					</button>
+					&nbsp;
+					<button class="btn btn-success" data-toggle="modal" data-target="#modal-addmul-image">
+						<i class="fa fa-picture-o" aria-hidden="true"></i> Add Images
+					</button>					
+				</div><!-- page-actions -->
 
-					<div class="item addnew">
-						<div class="item-image">
-							<img src="app/images/add_image.png" class="img-responsive center-block" alt="Responsive image">
-						</div><!-- item-image -->
-					</div><!-- item -->
+				<div class="images-grid">
 
 					<div class="item editable">
 						<div class="item-image">
@@ -358,7 +361,7 @@
 
 				</div><!-- /.modal-content -->
 			</div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
+		</div>
 
 		<div id="modal-addnew-image" class="modal fade" tabindex="-1" role="dialog">
 			<div class="modal-dialog modal-lg" role="document">
@@ -465,6 +468,35 @@
 			</div><!-- /.modal-dialog -->
 		</div><!-- /.modal -->
 
+		<div id="modal-addmul-image" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Edit image</h4>
+					</div>
+
+					<div class="modal-body">
+					</div><!-- modal-body -->
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">
+							<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+							Delete
+						</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal">
+							<span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+							Close
+						</button>
+					</div>
+
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+
+
 		<script src="app/plugins/jquery/jquery.min.js"></script>
 		<script src="app/plugins/bootstrap/js/bootstrap.min.js"></script>
 		<script src="app/plugins/select2/js/select2.min.js"></script>
@@ -474,6 +506,7 @@
         <script src="app/js/main.js"></script>
 		<script src="app/js/pages/image-management/image-management.js"></script>
 		<script>
+			Dropzone.autoDiscover = false;
 			$(function() {
 				ImageManagement.init({
 					'placeHolderSpecies': 'Species',
