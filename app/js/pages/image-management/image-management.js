@@ -30,8 +30,8 @@ ImageManagement = function () {
 
     var initDropzone = function () {
         // var dropzone = new Dropzone("div#dz-upload-image", { url: "/file/post"});
-        $('div#dz-upload-image').dropzone({
-            url: 'your url'
+        $('div.dropzone').dropzone({
+            url: 'url'
         });
     }
 
