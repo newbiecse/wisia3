@@ -1,6 +1,6 @@
 ImageManagement = function () {
 
-    var dialogEdit, dialogAdd;
+    var dialogEdit, dialogAdd, dialogMulAdd;
 
     var itemEditableHandler = function () {
         $('.images-grid').on('click', '.editable', function () {
@@ -28,18 +28,24 @@ ImageManagement = function () {
 
     }
 
-    var initDropzone = function () {
+    var onShowDialogAdd = function() {
+        dialogAdd.on('shown.bs.modal', function() {
 
-        Dropzone.autoDiscover = false;
+            $('div#dz-upload-image').dropzone({
+                url: 'url'
+            });
 
-        // var dropzone = new Dropzone("div#dz-upload-image", { url: "/file/post"});
-        $('div#dz-upload-image').dropzone({
-            url: 'url'
-        });
+        })
+    }
 
-        // $('div#dz-upload-mul-image').dropzone({
-        //     url: 'url'
-        // });        
+    var onShowDialogMulAdd = function() {
+        dialogMulAdd.on('shown.bs.modal', function() {
+
+            $('div#dz-upload-mul-image').dropzone({
+                url: 'url'
+            });
+
+        })
     }
 
     return {
@@ -48,10 +54,9 @@ ImageManagement = function () {
 
             initSelect2(opts);
 
-            initDropzone();
-
             dialogEdit = $('#modal-edit-image');
             dialogAdd = $('#modal-addnew-image');
+            dialogMulAdd = $('#modal-addmul-image');
 
             itemEditableHandler();
 
