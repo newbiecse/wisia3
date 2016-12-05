@@ -4,7 +4,6 @@
     height: 300px;
     border: 1px solid rgb(204, 204, 204);
     border-radius: 5px;
-    padding: 1px;
     margin: 15px 0px;
 }
 
@@ -13,9 +12,23 @@
     box-shadow: none;
 }
 
+.main-content .articles-grid .item > .panel > .panel-heading {
+    background-color: lightblue;
+}
+
 .main-content .articles-grid .item .msg-desc {
     min-height: 50px;
+    max-height: 180px;
     margin-bottom: 10px;
+    text-overflow: ellipsis;
+    overflow-y: hidden;
+    color: #333;
+}
+
+.main-content .articles-grid .item .msg-desc .thumbnail {
+    max-width: 120px;
+    float: left;
+    margin: 0px 15px 0px 0px;
 }
 
 .main-content .articles-grid .item .item-actions a.read-more {
