@@ -13,6 +13,7 @@
 		<link href="app/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 		<link href="app/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 		<link href="app/css/flag-icon.css" rel="stylesheet" />
+		<link rel="stylesheet" href="app/plugins/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 		<link href="app/css/main.css" rel="stylesheet" />
         <link href="app/css/home.css" rel="stylesheet" />
 		<link href="app/css/components/responsive-table.css" rel="stylesheet" />
@@ -135,7 +136,9 @@
 									<td data-label="BG">b</td>
 									<td data-label="Group">Höhere Pflanzen</td>
 									<td>
-										<i class="fa fa-file-image-o" aria-hidden="true"></i>
+										<a class="fancybox thumbnail-taxon" rel="group" href="app/images/1_b.jpg">
+											<i class="fa fa-file-image-o" aria-hidden="true"></i>
+										</a>										
 									</td>
 								</tr>
 
@@ -169,12 +172,16 @@
 
 		<script src="app/plugins/jquery/jquery.min.js"></script>
 		<script src="app/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<!-- Add mousewheel plugin (this is optional) -->
+		<script src="app/plugins/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+		<!-- Add fancyBox -->
+		<script src="app/plugins/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
         <script src="app/js/components/menu.js"></script>		
         <script src="app/js/main.js"></script>
 		<script src="app/js/pages/image-management/image-management.js"></script>
 		<script>
 			$(function() {
-
+				$('.fancybox').fancybox();
 			})
 		</script>
 	
