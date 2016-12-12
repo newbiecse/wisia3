@@ -126,7 +126,9 @@
 									</td>
 									<td data-label="WA">
 										<p class="block-has-header">
-											WA <span class="sub-header">#14</span>
+											WA <a class="sub-header" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">
+													#14
+												</a>
 										</p>
 									</td>
 									<td data-label="EG">B #14</td>
@@ -134,7 +136,11 @@
 									<td data-label="VSR">Art.1 V01</td>
 									<td data-label="BV">b</td>
 									<td data-label="BG">b</td>
-									<td data-label="Group">Höhere Pflanzen</td>
+									<td data-label="Group">
+										<a class="link-group" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">
+											Höhere Pflanzen
+										</a>										
+									</td>
 									<td>
 										<a class="fancybox thumbnail-taxon" rel="group" href="app/images/1_b.jpg">
 											<i class="fa fa-file-image-o" aria-hidden="true"></i>
@@ -182,6 +188,8 @@
 		<script>
 			$(function() {
 				$('.fancybox').fancybox();
+				$('.sub-header').popover();
+				$('.link-group').popover();
 			})
 		</script>
 	

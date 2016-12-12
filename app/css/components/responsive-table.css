@@ -9,7 +9,7 @@ table.res-table.font-12 thead th {
     font-size: 13px;
 }
 
-table.res-table tbody tr td span.sub-header {
+table.res-table tbody tr td .block-has-header > .sub-header {
     display: inline-block;
     font-size: 10px;
     color: blue;
