@@ -1,3 +1,32 @@
+table.res-table.padding-1 tbody tr td,
+table.res-table.padding-1 thead th {
+    padding: 6px 6px 6px 6px;
+    cursor: default;
+}
+
+table.res-table.font-12 tbody tr td,
+table.res-table.font-12 thead th {
+    font-size: 13px;
+}
+
+table.res-table tbody tr td span.sub-header {
+    display: inline-block;
+    font-size: 10px;
+    color: blue;
+}
+
+table.res-table tbody tr td .block-has-header {
+    position: relative;
+    padding-right: 20px;
+}
+
+table.res-table tbody tr td .block-has-header > .sub-header {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
 table.res-table {
             border-collapse: separate;
             background: #fff;
