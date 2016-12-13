@@ -131,6 +131,7 @@ table.res-table {
                 border-bottom: 1px dotted #ccc;
                 padding-left: 50%; 
 		        white-space: normal;
+                word-wrap: break-word;
             }
             .res-table td:last-child {
                 border-bottom: 0;
@@ -144,8 +145,33 @@ table.res-table {
 		        padding-right: 10px; 
 		        white-space: nowrap;
 		        text-align: left;
+                word-wrap: break-word;
             }
             table.res-table {
                 width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 525px) {
+
+            .res-table td {
+                display: block;
+                text-align: center;
+                padding: 4px 0px; 
+		        white-space: normal;
+                width: 100%;
+            }
+            .res-table td:before {
+                content: attr(data-label);
+                float: none;
+                display: block;
+                text-transform: uppercase;
+                font-weight: bold;
+                width: 100%; 
+		        padding-right: 0px; 
+		        white-space: nowrap;
+		        text-align: center;
+                padding: 4px 0px;
+                background-color: #e6ffff;
             }
         }

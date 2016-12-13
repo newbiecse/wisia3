@@ -188,8 +188,12 @@
 		<script>
 			$(function() {
 				$('.fancybox').fancybox();
-				$('.sub-header').popover();
-				$('.link-group').popover();
+				$('.sub-header').popover({
+					placement: 'auto right'
+				});
+				$('.link-group').popover({
+					placement: 'auto right'
+				});
 			})
 		</script>
 	
