@@ -1,0 +1,78 @@
+table.res-table.padding-1 tbody tr td,
+table.res-table.padding-1 thead th {
+    padding: 6px 6px 6px 6px;
+    cursor: default;
+}
+
+table.res-table.font-12 tbody tr td,
+table.res-table.font-12 thead th {
+    font-size: 13px;
+}
+
+table.res-table tbody tr td .block-has-header > .sub-header {
+    display: inline-block;
+    font-size: 10px;
+    color: blue;
+}
+
+table.res-table tbody tr td .block-has-header {
+    position: relative;
+    padding-right: 20px;
+}
+
+table.res-table tbody tr td .block-has-header > .sub-header {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    
+    /* Force table to not be like tables anymore */
+	.res-table-container table, 
+	.res-table-container thead, 
+	.res-table-container tbody, 
+	.res-table-container th, 
+	.res-table-container td, 
+	.res-table-container tr { 
+		display: block; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.res-table-container thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	.res-table-container tr { border: 1px solid #ccc; }
+ 
+	.res-table-container td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+		white-space: normal;
+		text-align:left;
+	}
+ 
+	.res-table-container td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+ 
+	/*
+	Label the data
+	*/
+	.res-table-container td:before { content: attr(data-title); }
+}
