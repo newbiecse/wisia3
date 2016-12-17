@@ -1,0 +1,135 @@
+nav.navbar.ws-header {
+    border: none;
+    background-color: #fff;
+} 
+.ws-header .navbar-header .navbar-brand > img.logo {
+    height: 34px;
+}
+
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+
+.table-borderless tbody tr td,
+.table-borderless tbody tr th,
+.table-borderless thead tr th,
+.table-borderless thead tr td,
+.table-borderless tfoot tr th,
+.table-borderless tfoot tr td {
+    border: none;
+}
+
+.images-filter {
+    padding: 15px 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+body .main-content {
+    color: rgb(204, 204, 204);
+    margin-bottom: 50px;
+}
+
+.images-filter .form-group {
+    margin-right: 10px;
+}
+
+.images-grid {
+    margin-bottom: 20px;
+}
+
+.images-grid div.item {
+    margin-right: 10px;
+    margin-top: 10px;
+    float: left;
+    width: 208px;
+    height: 260px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.images-grid div.item div.item-image {
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.images-grid div.item.addnew div.item-image {
+    margin-top: 80px;
+    border: none;
+}
+
+div#dz-upload-image {
+    cursor: pointer;
+    border-radius: 17px;
+    border: 1px dashed #197de1;
+    width: 90%;
+    margin: 0px 10px 10px 42px;
+}
+
+div#dz-upload-image .dz-message {
+    text-align: center;
+    padding-top: 40px;
+    /*min-width: 200px;
+    min-height: 200px;*/
+}
+
+.main-content .panel.panel-taxon .panel-sub-heading {
+    padding-left: 15px;
+    color: #464646;
+}
+
+.main-content .panel.panel-taxon {
+    border: none;
+    color: #464646;
+}
+
+.main-content .panel.panel-taxon .spacing {
+    margin-bottom: 30px;
+}
+
+.main-content .panel.panel-taxon table.table-bordered > tbody > tr > td,
+.main-content .panel.panel-taxon table.table-bordered > thead > tr > td {
+    padding-left: 15px;
+    border: 1px solid #d4d4d4;
+}
+
+.main-content .panel.panel-taxon table > thead > tr{
+    background-color: #fafafa;
+    white-space: nowrap;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.main-content .panel.panel-taxon > .panel-heading {
+    color: #197de1;
+    background-color: #fff;
+}
+
+.main-content .panel.panel-taxon.first-section {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.main-content .panel.panel-taxon.first-section table {
+    border: none;
+}
+
+.main-content .panel.panel-taxon .list-thumbnails > a.thumbnail-taxon > img {
+    max-width: 100px;
+    max-height: 80px;
+}

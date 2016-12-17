@@ -13,77 +13,109 @@
 		<link href="app/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 		<link href="app/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 		<link href="app/css/flag-icon.css" rel="stylesheet" />
-		<link href="app/css/main.css" rel="stylesheet" />
+		<link href="app/css/main.1.css" rel="stylesheet" />
         <link href="app/css/home.css" rel="stylesheet" />
 
     </head>
     <body>
 			
-        <div class="container-fluid px2">
+        <div class="container-fluid">
 
-            <div class="row wi-header">
-                <div class="col-md-6">
-                    <img class="logo fl-l" src="app/images/wisialogo2.gif" />
-                    <span class="online fl-l">online</span>
-                </div>
-                <div class="col-md-6 block-2">
-					<div class="mlt-lang fl-r">
-						<div class="mlt-btn p1 round">
-							<span class="flag-icon flag-icon-background flag-icon-gb fl-l"></span>
-							<i class="fa fa-chevron-down fl-r" aria-hidden="true"></i>
-						</div>
-						<ul class="mlt-list m0 mt1 round">
-							<li class="m0 p1"><a href="javsacript:;"><span class="flag-icon flag-icon-background flag-icon-de fl-l"></span>ge</a></li>
+			<div class="toolbar">
+
+				<div class="row">
+
+					<div class="col-md-8 col-xs-12 col-sm-8 col-lg-8">
+						<a class="navbar-brand" href="#">
+							<img class="logo" style="height: 40px;" src="app/images/wisialogo2.gif" />
+						</a>
+					</div>
+
+					<div class="col-md-4 col-xs-12 col-sm-4 col-lg-4 right">
+
+						<ul class="nav navbar-nav navbar-right top-nav">
+
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">One more separated link</a></li>
+								</ul>
+							</li>
+
 						</ul>
-					</div>
-                    <div class="search-block fl-r mr2">
-						<div class="input-group fl-r">
-							<span class="input-group-addon fa fa-search fa-1" id="basic-addon1"></span>
-							<input type="text" class="form-control" placeholder="Input species name ..." aria-describedby="basic-addon1">
-						</div>
-						<i class="fa fa-question-circle fa-1 fl-r mr2" aria-hidden="true"></i>
-					</div>
-                </div>
-            </div><!-- wi-header --> 
 
-			<div class="row">
-				<div class="menuwrap">
-					<ul id="menu" class="nav nav-pills menu">
-						<li><a href="javascript:;"><i class="fa fa-home fl-l" aria-hidden="true"></i><span>Home</span></a></li>
-						<li><a href="javascript:;"><i class="fa fa-newspaper-o fl-l" aria-hidden="true"></i><span>News</span></a></li>
-						<li class="dropdown active">
-							<a id="lblDataService" class="dropdown-toggle" data-target="#" href="javascript:;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-								<i class="fa fa-database fl-l" aria-hidden="true"></i><span>Data service</span><i class="fa fa-chevron-down fl-r last" aria-hidden="true"></i>
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="lblDataService">
-								<li class="m0 p1"><a href="javsacript:;">List of German protected species</a></li>
-								<li class="m0 p1"><a href="javsacript:;">Special cases: protection history</a></li>
-								<li class="m0 p1"><a href="javsacript:;">List of texonomic references</a></li>
-								<li class="m0 p1"><a href="javsacript:;">List of footnotes</a></li>
-								<li class="m0 p1"><a href="javsacript:;">Test db</a></li>
-								<li class="m0 p1"><a href="javsacript:;">Data download</a></li>
-							</ul>
-						</li>
-						<li><a href="javascript:;"><i class="fa fa-info-circle fl-l" aria-hidden="true"></i><span>About</span><i class="fa fa-chevron-down fl-r last" aria-hidden="true"></i></a></li>
-						<li><a href="javascript:;"><i class="fa fa-question-circle fl-l" aria-hidden="true"></i><span>Help</span></a></li>
-						<li><a href="javascript:;"><i class="fa fa-file-image-o fl-l" aria-hidden="true"></i><span>Gallery</span></a></li>						
-					</ul>
-					<ul class="nav nav-pills collect menu">
+						<form class="navbar-form" role="search">
+							<div class="inner-addon left-addon">
+								<i class="glyphicon glyphicon-search"></i>
+								<input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+							</div>
+						</form>
+
+					</div>
+
+				</div>			
+
+			</div><!-- toolbar -->
+
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">Brand</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+						<li><a href="#">Link</a></li>
 						<li class="dropdown">
-							<a id="moreLabel" class="dropdown-toggle" data-target="#" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<span class="caret"></span>
-							</a>
-							<ul id="submenu" class="dropdown-menu" aria-labelledby="moreLabel">
-								<li>
-									<a href="javascript:;">
-										<i class="fa fa-sign-in fl-l" aria-hidden="true"></i><span>Login</span>
-									</a>
-								</li>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">One more separated link</a></li>
 							</ul>
 						</li>
 					</ul>
-				</div>
-			</div><!-- menu --> 
+					<form class="navbar-form navbar-left">
+						<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Link</a></li>
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+						</li>
+					</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
 
 			<div class="main-content">
 
@@ -174,7 +206,7 @@
 
 		<script src="app/plugins/jquery/jquery.min.js"></script>
 		<script src="app/plugins/bootstrap/js/bootstrap.min.js"></script>
-        <script src="app/js/components/menu.js"></script>		
+		<script src="app/js/components/slidebar.js"></script>
         <script src="app/js/main.js"></script>
 		<script src="app/js/pages/image-management/image-management.js"></script>
 		<script>
