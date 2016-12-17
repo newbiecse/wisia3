@@ -1,6 +1,7 @@
 Gallery = function () {
 
     var gridView;
+    var pswpElement;
     var ps;
     var items = [];
 
@@ -24,28 +25,31 @@ Gallery = function () {
             var $this = $(this);
             var index = $this.data('ps-index');
 
-            ps.init();
+            initGallery();
 
             ps.goTo(index);
         })
     }
 
+    var initGallery = function () {
+        var options = {      
+            history: false,
+            focus: false,
+
+            showAnimationDuration: 0,
+            hideAnimationDuration: 0
+        };
+
+        ps = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+        ps.init();
+    }
+
     return {
         init: function() {
             gridView = $('.images-grid');
+            pswpElement = document.querySelectorAll('.pswp')[0];
 
             buildItems();
-
-            var options = {      
-                history: false,
-                focus: false,
-
-                showAnimationDuration: 0,
-                hideAnimationDuration: 0
-            };
-
-            var pswpElement = document.querySelectorAll('.pswp')[0];
-            ps = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
 
             onThumbnailClick();
         }
